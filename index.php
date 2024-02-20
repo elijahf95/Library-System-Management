@@ -7,30 +7,35 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="card">
+<div class="container">
+    <div class="card">
         <a class="lib"> Library Management System</a>
         <div class="inputBox1">
-        <form class="form" action="add-library.php" method="POST" id="library-form">
-            <div class="form-group">
-                <label for="studentname">Student Name:</label>
-                <input name="studentname" class="input" type="text" required="required" id="studentname" required>
-            </div>
-            <div class="form-group">
-                <label for="studentid">Student ID:</label>
-                <input name="studentid" class="input" type="text" required="required" id="studentid" required>
-            </div>
-            <div class="form-group">
-                <label for="booktitle">Book Title/ID:</label>
-                <input name="booktitle" class="input" type="text" id="booktitle" required>
-            </div>
-            <div class="form-group">
-                <label for="datetime">Date and Time:</label>
-                <input name="datetime" class="input" type="datetime-local" required="required" id="datetime" required>
-            </div>
-            <button type="submit">Submit</button>
-        </form>
+            <form class="form" action="add-library.php" method="POST" id="library-form">
+                <div class="form-group">
+                   
+                    <input name="studentname" class="input" type="text" required="required" id="studentname" required>
+                    <span class="user">Student Name</span>
+                </div>
+                <div class="form-group">
+
+                    <input name="studentid" class="input" type="text" required="required" id="studentid" required>
+                    <span>Student ID</span>
+                </div>
+                <div class="form-group">
+                    <input name="booktitle" class="input" type="text" id="booktitle" required>
+                    <span>Book Title</span>
+                </div>
+                <div class="form-group">
+                    <label for="datetime">Date and Time:</label>
+                    <input name="datetime" class="input" type="datetime-local" required="required" id="datetime" required>
+                </div>
+                <button type="submit" class="enter">Submit</button>
+            </form>
+        </div>
     </div>
+</div>
+
 
     <!-- JavaScript for client-side validation -->
     <script>
